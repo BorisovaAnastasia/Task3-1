@@ -4,13 +4,13 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Введите тип массива. одномерный, двумерный, ступенчатый? ");
+        Console.Write("Enter array type. odnomern, dvumern, stupench");
         string tip = Console.ReadLine();
-        if(tip == "одномерный")
+        if(tip == "odnomern")
         {
-            Console.Write("Введите длину массива ");
+            Console.Write("Enter the length of the array ");
             int N = Int32.Parse(Console.ReadLine());
-            Console.Write("Заполните массив вручную? true/false или пропустить ");
+            Console.Write("Fill the array manually? true/false or skip? ");
             bool x = bool.TryParse(Console.ReadLine(), out bool not_rnd);
             
             OdnomernMassiv mass = new OdnomernMassiv();
@@ -23,13 +23,13 @@ class Program
             mass.ShowMass();
             Console.WriteLine(mass.MyMassiv[0]);
         }
-        if(tip == "двумерный")
+        if(tip == "dvumern")
         {
-            Console.Write("Введите кол-во строк ");
+            Console.Write("Enter number of lines ");
             int N = Int32.Parse(Console.ReadLine());
-            Console.Write("Введите кол-во столбцов ");
+            Console.Write("Enter number of columns ");
             int K = Int32.Parse(Console.ReadLine());
-            Console.Write("Заполните массив вручную? true/false или пропустить ");
+            Console.Write("Fill the array manually? true/false or skip? ");
             bool y = bool.TryParse(Console.ReadLine(), out bool not_rnd);
            
             D_Massiv massiv = new D_Massiv();
@@ -41,11 +41,11 @@ class Program
             massiv.Pokaz_Rev();
             Console.WriteLine(massiv.MyDMassiv[5, 2]);
         }
-        if(tip == "ступенчатый")
+        if(tip == "stupench")
         {
-            Console.Write("Введите кол-во строк ");
+            Console.Write("Enter number of lines ");
             int N = Int32.Parse(Console.ReadLine());
-            Console.Write("Заполните массив вручную? true/false или пропустить ");
+            Console.Write("Fill the array manually? true/false or skip? ");
             bool z = bool.TryParse(Console.ReadLine(), out bool not_rnd);
            
             S_Massiv massiv = new S_Massiv();
