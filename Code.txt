@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Enter array type. odnomern, dvumern, stupench");
+        Console.Write("Enter array type. odnomern, dvumern, stupench ");
         string tip = Console.ReadLine();
         if(tip == "odnomern")
         {
